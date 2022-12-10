@@ -2,11 +2,13 @@ package com.example.carbonfootprintcalculator.controller;
 
 import com.example.carbonfootprintcalculator.mapper.UserMapper;
 import com.example.carbonfootprintcalculator.entity.Response;
-import jakarta.annotation.Resource;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 @RestController
 @RequestMapping("/api")
@@ -15,7 +17,7 @@ public class UserController {
     UserMapper userMapper;
 
     @PostMapping("/login")
-    public Response logerUser(@RequestBody Response.User user)
+    public Response logerUser(Response.User user)
     {
         String uname = user.getUname();
         String pwd = user.getPwd();
@@ -34,7 +36,7 @@ public class UserController {
         }
     }
     @PostMapping("/register")
-    public  Response registerUser(@RequestBody Response.User user)
+    public  Response registerUser(Response.User user)
     {
         String uname = user.getUname();
         String pwd = user.getPwd();
