@@ -15,14 +15,7 @@ public class ItemController {
     ItemMapper itemMapper;
     @PostMapping("/insert")
     public void insert(@RequestBody item item){
-            String Iname = item.getItemName();
-            if (itemMapper.insertByName(Iname) ==null) {
-//                System.out.println(itemMapper.insertByName(Iname).getItemName());
                 itemMapper.insert(item);
-            }
-            else {
-                itemMapper.update(item);
-            }
     }
 //    @PostMapping("/update")
 //    public void update(@RequestBody item item) {

@@ -3,12 +3,14 @@ package com.example.carbonfootprintcalculator.entity;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
 @NoArgsConstructor
 @AllArgsConstructor
 public class item {
     public String itemName;
     public double carbonNum;
-
+    public Date date;
     public String getItemName() {
         return itemName;
     }

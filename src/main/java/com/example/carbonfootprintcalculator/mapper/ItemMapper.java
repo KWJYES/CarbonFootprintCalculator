@@ -13,7 +13,7 @@ public interface ItemMapper {
     /**
      * 插入
      */
-    @Update("insert into t_item values(#{itemName},#{carbonNum})")
+    @Update("insert into t_item values(#{itemName},#{carbonNum},#{date})")
     void   insert(item item);
 /**
  * 更新
