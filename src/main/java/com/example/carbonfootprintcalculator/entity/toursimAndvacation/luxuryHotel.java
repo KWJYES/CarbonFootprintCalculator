@@ -1,6 +1,5 @@
 package com.example.carbonfootprintcalculator.entity.toursimAndvacation;
 
-import com.example.carbonfootprintcalculator.entity.toursimAndvacation.tourismAndvacation;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
@@ -8,9 +7,29 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class luxuryHotel extends tourismAndvacation {
     private double carbonNum;
+    private String itemName;
     private double coefficient = 0.05;;
     public void setCarbonNum(int num) {
         this.carbonNum = num*coefficient;
     }
 
+    @Override
+    public double getCarbonNum() {
+        return carbonNum;
+    }
+
+    @Override
+    public void setCarbonNum(double carbonNum) {
+        this.carbonNum = carbonNum;
+    }
+
+    @Override
+    public String getItemName() {
+        return itemName;
+    }
+
+    @Override
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
 }

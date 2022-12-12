@@ -7,6 +7,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class hairDrier extends Electronics {
     private double carbonNum;
+    private String itemName;
+
+    @Override
+    public String getItemName() {
+        return itemName;
+    }
+
+    @Override
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
     private double coefficient = 0.04;
     public void setCarbonNum(int num) {
         this.carbonNum = num*coefficient;

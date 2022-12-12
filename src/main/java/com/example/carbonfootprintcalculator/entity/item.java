@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 public class item {
     public String itemName;
     public double carbonNum;
-    public double coefficient;
 
     public String getItemName() {
         return itemName;

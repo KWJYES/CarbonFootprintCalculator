@@ -7,6 +7,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class TV extends Electronics {
     private double carbonNum;
+    private String itemName;
+
+    @Override
+    public String getItemName() {
+        return itemName;
+    }
+
+    @Override
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
     private double coefficient = 0.10;
     public void setCarbonNum(int num) {
         this.carbonNum = num*coefficient;

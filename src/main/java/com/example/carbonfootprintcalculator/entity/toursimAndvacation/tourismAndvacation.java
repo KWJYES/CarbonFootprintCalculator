@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class tourismAndvacation extends item {
+    private String itemName;
     private double carbonNum;
     private double coefficient;
     public double getCarbonNum() {

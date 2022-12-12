@@ -32,4 +32,6 @@ public interface ItemMapper {
 @Select("select* from t_item where itemName = #{itemName}")
 item insertByName(String name);
 
+    @Select("select* from t_item where itemName = #{itemName}")
+    item findById(String name);
 }

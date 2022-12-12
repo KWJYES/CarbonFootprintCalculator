@@ -7,10 +7,34 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class commercialOffice extends  item{
+        private String itemName;
         private double carbonNum;
         private double coefficient;
     public double getCarbonNum() {
         return carbonNum;
+    }
+
+    @Override
+    public String getItemName() {
+        return itemName;
+    }
+
+    @Override
+    public void setItemName(String itemName) {
+        this.itemName = itemName;
+    }
+
+    @Override
+    public void setCarbonNum(double carbonNum) {
+        this.carbonNum = carbonNum;
+    }
+
+    public double getCoefficient() {
+        return coefficient;
+    }
+
+    public void setCoefficient(double coefficient) {
+        this.coefficient = coefficient;
     }
 
     public void setCarbonNum(int num) {

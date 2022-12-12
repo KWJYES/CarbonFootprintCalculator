@@ -32,4 +32,10 @@ public class ItemController {
     public void dele(@RequestBody item item){
         itemMapper.delete(item);
     }
+
+    @PostMapping("/find")
+    public item find(@RequestBody item item) {
+        return itemMapper.findById(item.getItemName());
+    }
+
 }
