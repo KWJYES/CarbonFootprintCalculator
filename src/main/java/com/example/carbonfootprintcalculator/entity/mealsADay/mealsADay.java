@@ -14,10 +14,7 @@ public class mealsADay extends item {
         return carbonNum;
     }
 
-    public mealsADay(String itemName, double carbonNum) {
-        super(itemName);
-        this.carbonNum = carbonNum;
-    }
+
 
     public mealsADay(double carbonNum) {
         this.carbonNum = carbonNum;

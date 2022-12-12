@@ -14,10 +14,7 @@ public class Dailyliving extends item {
         return carbonNum;
     }
 
-    public Dailyliving(String itemName, double carbonNum) {
-        super(itemName);
-        this.carbonNum = carbonNum;
-    }
+
 
     public Dailyliving(double carbonNum) {
         this.carbonNum = carbonNum;

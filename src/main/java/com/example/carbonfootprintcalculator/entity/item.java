@@ -6,8 +6,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class item {
-    private String itemName;
-
+    public String itemName;
+    public double carbonNum;
+    public double coefficient;
 
     public String getItemName() {
         return itemName;
@@ -17,5 +18,11 @@ public class item {
         this.itemName = itemName;
     }
 
+    public double getCarbonNum() {
+        return carbonNum;
+    }
 
+    public void setCarbonNum(double carbonNum) {
+        this.carbonNum = carbonNum;
+    }
 }

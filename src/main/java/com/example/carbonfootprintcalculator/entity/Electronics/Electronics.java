@@ -14,10 +14,7 @@ public class Electronics extends item {
         return carbonNum;
     }
 
-    public Electronics(String itemName, double carbonNum) {
-        super(itemName);
-        this.carbonNum = carbonNum;
-    }
+
 
     public Electronics(double carbonNum) {
         this.carbonNum = carbonNum;

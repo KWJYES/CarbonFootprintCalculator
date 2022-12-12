@@ -14,10 +14,7 @@ public class tourismAndvacation extends item {
         return carbonNum;
     }
 
-    public tourismAndvacation(String itemName, double carbonNum) {
-        super(itemName);
-        this.carbonNum = carbonNum;
-    }
+
 
     public tourismAndvacation(double carbonNum) {
         this.carbonNum = carbonNum;

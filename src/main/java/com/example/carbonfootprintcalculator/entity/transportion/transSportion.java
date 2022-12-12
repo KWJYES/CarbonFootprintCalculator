@@ -14,10 +14,7 @@ public class transSportion extends item {
         return carbonNum;
     }
 
-    public transSportion(String itemName, double carbonNum) {
-        super(itemName);
-        this.carbonNum = carbonNum;
-    }
+
 
     public transSportion(double carbonNum) {
         this.carbonNum = carbonNum;

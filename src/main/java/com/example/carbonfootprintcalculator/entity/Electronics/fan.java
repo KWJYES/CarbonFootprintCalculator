@@ -12,4 +12,20 @@ public class fan extends Electronics {
         this.carbonNum = num*coefficient;
     }
 
+    @Override
+    public double getCarbonNum() {
+        return carbonNum;
+    }
+
+    public void setCarbonNum(double carbonNum) {
+        this.carbonNum = carbonNum;
+    }
+
+    public double getCoefficient() {
+        return coefficient;
+    }
+
+    public void setCoefficient(double coefficient) {
+        this.coefficient = coefficient;
+    }
 }
