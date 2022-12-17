@@ -24,8 +24,8 @@ spring.datasource.password = 123456
 
 表：t_item
 
-| 名        | 类型     | 长度 | 小数点 | 不是null | 虚拟 |
-| --------- | -------- | ---- | ------ | -------- | ---- |
-| carbonNum | double   |      |        | ✔        |      |
-| date      | datetime |      |        | ✔        |      |
-| uname     | varchar  | 255  |        | ✔        |      |
+| 名        | 类型     | 长度 | 小数点 | 不是null | 虚拟 | 键   | 注释 |
+| --------- | -------- | ---- | ------ | -------- | ---- | ---- | ---- |
+| carbonNum | double   |      |        | ✔        |      |      |      |
+| date      | datetime |      |        | ✔        |      |      |      |
+| uname     | varchar  | 255  |        | ✔        |      |      |      |
