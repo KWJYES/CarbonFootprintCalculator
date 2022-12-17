@@ -14,7 +14,7 @@ public class ItemController {
     @Autowired
     ItemMapper itemMapper;
     @PostMapping("/insert")
-    public void insert(@RequestBody item item){
+    public void insert(@RequestBody Item item){
                 itemMapper.insert(item);
     }
 //    @PostMapping("/update")
@@ -22,13 +22,13 @@ public class ItemController {
 //        itemMapper.update(item);
 //    }
     @PostMapping("/dele")
-    public void dele(@RequestBody item item){
+    public void dele(@RequestBody Item item){
         itemMapper.delete(item);
     }
 
     @PostMapping("/find")
-    public item find(@RequestBody item item) {
-        return itemMapper.findById(item.getItemName());
+    public Item find(@RequestBody User user) {
+        return itemMapper.findByUserName(user.getUname());
     }
 
 }

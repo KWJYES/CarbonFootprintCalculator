@@ -18,7 +18,7 @@ public interface UserMapper {
     void register(User user);
 
     //注册时判断用户是否存在
-    @Select("select* from t_user where uname=#{uname}")
+    @Select("select* from t_user where uname=#{name}")
     User  registerByName(String name);
 
 

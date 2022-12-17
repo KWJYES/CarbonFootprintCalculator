@@ -7,16 +7,25 @@ import java.util.Date;
 
 @NoArgsConstructor
 @AllArgsConstructor
-public class item {
-    public String itemName;
-    public double carbonNum;
-    public Date date;
-    public String getItemName() {
-        return itemName;
+public class Item {
+    private double carbonNum;
+    private Date date;
+    private String uname;
+
+    public Date getDate() {
+        return date;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String getUname() {
+        return uname;
+    }
+
+    public void setUname(String uname) {
+        this.uname = uname;
     }
 
     public double getCarbonNum() {
