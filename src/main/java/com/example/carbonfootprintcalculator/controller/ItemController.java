@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
 @RestController
 @Service
 @RequestMapping("/item")
@@ -27,7 +30,7 @@ public class ItemController {
     }
 
     @PostMapping("/find")
-    public Item find(@RequestBody User user) {
+    public List<Item> find(@RequestBody User user) {
         return itemMapper.findByUserName(user.getUname());
     }
 
