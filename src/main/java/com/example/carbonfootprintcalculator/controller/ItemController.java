@@ -17,17 +17,19 @@ public class ItemController {
     @Autowired
     ItemMapper itemMapper;
     @PostMapping("/insert")
-    public void insert(@RequestBody Item item){
+    public Response insert(@RequestBody Item item){
                 item.toTree();
                 itemMapper.insert(item);
+        return new Response(200, "操作成功", "");
     }
 //    @PostMapping("/update")
 //    public void update(@RequestBody item item) {
 //        itemMapper.update(item);
 //    }
     @PostMapping("/dele")
-    public void dele(@RequestBody Item item){
+    public Response dele(@RequestBody Item item){
         itemMapper.delete(item);
+        return new Response(200, "操作成功", "");
     }
 
     @PostMapping("/find")
