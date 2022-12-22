@@ -18,6 +18,7 @@ public class ItemController {
     ItemMapper itemMapper;
     @PostMapping("/insert")
     public void insert(@RequestBody Item item){
+                item.toTree();
                 itemMapper.insert(item);
     }
 //    @PostMapping("/update")

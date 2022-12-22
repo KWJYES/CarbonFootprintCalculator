@@ -11,9 +11,18 @@ public class Item {
     private double carbonNum;
     private Date date;
     private String uname;
+    private int treeNum;
 
     public Date getDate() {
         return date;
+    }
+
+    public int getTreeNum() {
+        return treeNum;
+    }
+
+    public void setTreeNum(int treeNum) {
+        this.treeNum = treeNum;
     }
 
     public void setDate(Date date) {
@@ -35,4 +44,13 @@ public class Item {
     public void setCarbonNum(double carbonNum) {
         this.carbonNum = carbonNum;
     }
+    public void toTree()
+    {
+        if (carbonNum%111 ==0)
+             treeNum = (int) (this.carbonNum/111);
+
+        else
+            treeNum = (int) (this.carbonNum/111)+1;
+    }
+
 }
