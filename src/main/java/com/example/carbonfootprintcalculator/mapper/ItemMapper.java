@@ -15,7 +15,7 @@ public interface ItemMapper {
     /**
      * 插入
      */
-    @Update("insert into t_item values(#{carbonNum},#{date},#{uname}，#{treeName})")
+    @Update("insert into t_item values(#{carbonNum},#{date},#{uname}，#{treeNum})")
     void insert(Item item);
 
     /**
