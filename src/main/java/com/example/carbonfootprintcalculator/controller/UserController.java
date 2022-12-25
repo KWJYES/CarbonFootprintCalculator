@@ -4,12 +4,9 @@ import com.example.carbonfootprintcalculator.entity.Response;
 import com.example.carbonfootprintcalculator.entity.User;
 import com.example.carbonfootprintcalculator.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-@RestController
+import org.springframework.web.bind.annotation.*;
 
+@RestController
 @RequestMapping("/api")
 public class UserController {
 //    @Resource
